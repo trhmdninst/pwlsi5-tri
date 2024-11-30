@@ -19,9 +19,7 @@ Route::get('profile', function () {
 });
 
 Route::get('array', function () {
-    $nilai_awal = 1;
-    while ($nilai_awal <= 10) {
-        echo 'Hello Word' . $nilai_awal . '<br>';
-        $nilai_awal++;
+    for ($i = 1; $i <= 10; $i++) {
+        echo 'Hello Word ' . $i . '<br>';
     }
 });
