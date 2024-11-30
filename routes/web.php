@@ -11,15 +11,12 @@ Route::get('about', function () {
 });
 
 Route::get('mahasiswa', function () {
-    return view('mahasiswa');
+    $npm = [123, 124, 125, 126];
+    $nama = ['Risa', 'Riski', 'Dita', 'Andin'];
+    $jumlah = count($npm);
+    return view('mahasiswa', compact('npm', 'jumlah', 'nama'));
 });
 
 Route::get('profile', function () {
     return view('profile');
-});
-
-Route::get('array', function () {
-    for ($i = 1; $i <= 10; $i++) {
-        echo 'Hello Word ' . $i . '<br>';
-    }
 });
