@@ -38,30 +38,73 @@
   <div class="container">
     <h1>ini halaman mahasiswa</h1>
 
-    <table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
-      <thead>
-        <tr>
-          <th>NPM</th>
-          <th>Nama Mahasiswa</th>
-          <th>Jenis Kelamin</th>
-          <th>Tanggal Lahir</th>
-          <th>Alamat</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php $nilai_awal = 0; ?>
-        @while ($nilai_awal < $jumlah)
-        <tr>
-          <td>{{ $npm [$nilai_awal] }}</td>
-          <td>{{ $nama [$nilai_awal] }}</td>
-          <td>Perempuan</td>
-          <td>30-06-2004</td>
-          <td>Medan</td>
-        </tr>
-        <?php $nilai_awal++ ?>
-        @endwhile
-      </tbody>
-    </table>
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Tabel Mahasiswa</h4>
+        <table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
+          <thead>
+            <tr>
+              <th>NPM</th>
+              <th>Nama Mahasiswa</th>
+              <th>Jenis Kelamin</th>
+              <th>Tanggal Lahir</th>
+              <th>Alamat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php $nilai_awal = 0; ?>
+            @while ($nilai_awal < $jumlah)
+            <tr>
+              <td>{{ $npm [$nilai_awal] }}</td>
+              <td>{{ $nama [$nilai_awal] }}</td>
+              <td>Perempuan</td>
+              <td>30-06-2004</td>
+              <td>Medan</td>
+            </tr>
+            <?php $nilai_awal++ ?>
+            @endwhile
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-6">
+        <h4>Form Mahasiswa</h4>
+        <form action="" method="GET">
+          <div class="row">
+            <div class="col-sm-6">
+              <label for="">NPM</label>
+              <input type="number" name="npm" class="form-control" placeholder="Input NPM">
+            </div>
+            <div class="col-sm-6">
+              <label for="">Nama Mahasiswa</label>
+              <input type="text" name="nama_mahasiswa" class="form-control" placeholder="Input Nama Mahasiswa">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label for="">Tanggal Lahir</label>
+              <input type="date" name="tanggal_lahir" class="form-control">
+            </div>
+            <div class="col-sm-6">
+              <label for="">Program Studi</label>
+              <select name="prodi" class="form-control">
+                <option>Sistem Informasi</option>
+                <option>Ilmu Komputer</option>
+                <option>Biologi</option>
+                <option>Fisika</option>
+                <options>Matematika</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-12">
+              <button class="btn btn-primary" style="width: 100%">Simpan</button>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+
   </div>
 
 
