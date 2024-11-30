@@ -35,8 +35,50 @@
     </div>
   </nav>
 
-  <div class="container" style="margin-left: 30px">
+  <div class="container">
     <h1>ini halaman mahasiswa</h1>
+
+    <table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
+      <thead>
+        <tr>
+          <th>NPM</th>
+          <th>Nama Mahasiswa</th>
+          <th>Jenis Kelamin</th>
+          <th>Tanggal Lahir</th>
+          <th>Alamat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12345</td>
+          <td>Risa</td>
+          <td>Perempuan</td>
+          <td>30-06-2004</td>
+          <td>Medan</td>
+        </tr>
+        <tr>
+          <td>67890</td>
+          <td>Tino</td>
+          <td>Laki Laki</td>
+          <td>19-08-2005</td>
+          <td>Bandung</td>
+        </tr>
+        <tr>
+          <td>23456</td>
+          <td>Dito</td>
+          <td>Laki Laki</td>
+          <td>23-10-2004</td>
+          <td>Padang</td>
+        </tr>
+        <tr>
+          <td>79865</td>
+          <td>Andin</td>
+          <td>Perempuan</td>
+          <td>31-01-2004</td>
+          <td>Aceh</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 
