@@ -17,3 +17,11 @@ Route::get('mahasiswa', function () {
 Route::get('profile', function () {
     return view('profile');
 });
+
+Route::get('array', function () {
+    $nilai_awal = 1;
+    while ($nilai_awal <= 10) {
+        echo 'Hello Word' . $nilai_awal . '<br>';
+        $nilai_awal++;
+    }
+});
